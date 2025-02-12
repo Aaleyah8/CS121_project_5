@@ -1,13 +1,34 @@
-include files pointer
-include stringstream
+## Main()
+open file for output
+if outfile is open
+list each
+close outfile 
+else the file doesnt open
+end the if
 
-getline() function to read one data function at a time
-Use delimeter as a char as a single quote
+append the file
+offstream the app file
 
-use temporarory strings
+while infile
+read the file
+open inFile
+end while
 
-stringstream to do any data conversation
+open in file
+set keepGoing to be true as a bool
+add while keepGoing
+getline()
+if in file
+set keepGoing to false
+else getting the file
+end if and end while
 
-Add two integers
+close in file
 
-repeat for each line in text files
+getline returns false at the end of file
+while (getline() )
+end while
+close the in file
+
+returns 0
+end the main
