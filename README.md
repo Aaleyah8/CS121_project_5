@@ -1,34 +1,20 @@
 ## Main()
-open file for output
-if outfile is open
-list each
-close outfile 
-else the file doesnt open
-end the if
 
-append the file
-offstream the app file
+of stream in file
+string the current line
+convert stringstream 
+int num 1 and 2
+int the sum
 
-while infile
-read the file
-open inFile
-end while
+open file
+loop the getLine()
+clear coverter
+convert the string
 
-open in file
-set keepGoing to be true as a bool
-add while keepGoing
-getline()
-if in file
-set keepGoing to false
-else getting the file
-end if and end while
-
-close in file
-
-getline returns false at the end of file
-while (getline() )
-end while
-close the in file
+Add up the two integers
+use a for loop
+Print the text that number of times
+Repeat for each line in the text file
 
 returns 0
 end the main
