@@ -3,21 +3,25 @@
 #include <sstream>
 
 int main(){
-        std::ofstream inFile;
+        std::ifstream inFile;
         std::string currentline;
         std::stringstream converter;
 
-        int Num1;
-        int Num2;
-        int sum;
+	std::string sNum1;
+	std::string sNum2;
+	std::string text;
+	
+	int Num1;
+	int Num2;
+	int sum;
 
         inFile.open("data.csv");
         while (getline(inFile, currentline)){
                 converter.clear();
                 converter.str(currentline);
 
-                getline(converter, Num1 ',');
-                getline(converter, Num2 ',');
+                getline(converter, sNum1, ',');
+                getline(converter, sNum2, ',');
                 getline(converter, text);
 
                 converter.clear();
@@ -25,12 +29,12 @@ int main(){
                 converter << Num1 << " " << Num2;
                 converter >> Num1 >> Num2;
 
-                int sum - Num1 + Num2;
+                int sum = Num1 + Num2;
 
-	        for (int i = 0; i < sum; i++)
-                        std::cout << getline << std::ends;
-			std::cout << text << std::ends;
-
+	        for (int i = 0; i < sum; i++){
+			std::cout << text << " ";
+		}
+		std::cout << std::ends;
         } // end while
 
                 inFile.close();
